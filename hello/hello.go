@@ -1,21 +1,11 @@
 package main
 
 import (
-	"fmt"
-	"log"
+    "fmt"
 
-	"practice/greetings"
+    "golang.org/x/example/stringutil"
 )
 
 func main() {
-	log.SetPrefix("greetings: ")
-	log.SetFlags(0)
-	names := []string{"sanath", "ramesh"}
-
-	messages, err := greetings.Hellos(names)
-	if err != nil {
-        log.Fatal(err)
-    }
-
-	fmt.Println(messages)
+    fmt.Println(stringutil.ToUpper("Hello"))
 }
